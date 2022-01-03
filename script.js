@@ -22,3 +22,13 @@ function createSketchGrid() {
 function fillOnMouseOver(e) {
     e.target.style.backgroundColor = 'grey'
 }
+
+function clearGrid(e) {
+    let rowsArray = [...document.getElementsByClassName('row')];
+    for(let row of rowsArray) {
+        let cellsArray = [...row.children]
+        for(let cell of cellsArray) {
+            cell.style.backgroundColor = 'white'
+        }
+    }
+}
