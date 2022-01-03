@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", createSketchGrid());
 
 function createSketchGrid() {
     let sketchGrid = document.getElementById('sketch-grid');
+    console.log(sketchGrid);
 
     for(let rowCount = 0; rowCount < 16; rowCount++) {
         let rowElement = document.createElement('div');
