@@ -43,7 +43,20 @@ function createSketchGrid(gridSize=16) { //default size 16x16
 }
 
 function fillOnMouseOver(e) {
-    e.target.style.backgroundColor = 'grey'
+    let sketchColor = '';
+    if(document.getElementById('grey').checked) {
+        sketchColor = 'grey';
+    }
+    if(document.getElementById('random').checked) {
+        let min = Math.ceil(0);
+        let max = Math.floor(256);
+        
+        let r = (Math.floor(Math.random() * (max - min) + min));
+        let g = (Math.floor(Math.random() * (max - min) + min));
+        let b = (Math.floor(Math.random() * (max - min) + min));
+        sketchColor = `rgb(${r},${g},${b})`;
+    }
+    e.target.style.backgroundColor = sketchColor;
 }
 
 function updateGridSize(selectObject) {

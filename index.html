@@ -15,6 +15,13 @@
             <button id="clear" onClick="clearGridColor()">Clear</button>
             <div id="sketch-grid">
             </div>
+            <div id="color-options">
+                <p>Color:</p>
+                <input type="radio" id="grey" name="color-option" value="grey" checked>
+                <label for="grey">Grey</label>
+                <input type="radio" id="random" name="color-option" value="random">
+                <label for="random">Random</label>
+            </div>
             <label for="grid-size">Grid size:</label>
             <select name="grid-size" id="grid-size" onchange="updateGridSize(this)">
             </select>
