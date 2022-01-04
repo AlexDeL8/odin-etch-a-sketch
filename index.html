@@ -12,9 +12,12 @@
     <body>
         <div id="main-container">
             <h1 id="title">Odin Etch-a-Sketch</h1>
-            <button id="clear" onClick="clearGrid()">Clear</button>
+            <button id="clear" onClick="clearGridColor()">Clear</button>
             <div id="sketch-grid">
             </div>
+            <label for="grid-size">Grid size:</label>
+            <select name="grid-size" id="grid-size" onchange="updateGridSize(this)">
+            </select>
         </div>
     </body>
 </html>
