@@ -28,7 +28,7 @@ function createSketchGrid(gridSize=16) { //default size 16x16
 
     let gridSizeSelect = document.getElementById('grid-size');
     if(!gridSizeSelect.firstElementChild) {
-        for(let optionCount = 1; optionCount <= 100; optionCount++) {
+        for(let optionCount = 1; optionCount <= 64; optionCount++) {
             let optionElement = document.createElement('option');
             optionElement.setAttribute('value', optionCount);
             optionElement.innerText = optionCount+' x '+optionCount;
