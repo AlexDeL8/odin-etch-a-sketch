@@ -1,5 +1,11 @@
 'use strict'
-
+/*
+ * Things to add:
+ *     -Eraser
+ *     -Change radio buttons to icons w/ styling
+ *     -Background div-border to look like a original etch-a-sketch surrounding grid
+ *         -Place all new radio buttons/dropdowns/etc. within bottom of div-border
+ */
 document.addEventListener('DOMContentLoaded', createSketchGrid());
 
 function createSketchGrid(gridSize=16) { //default size 16x16
