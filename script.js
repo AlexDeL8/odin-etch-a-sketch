@@ -62,6 +62,9 @@ function fillOnMouseOver(e) {
         let b = (Math.floor(Math.random() * (max - min) + min));
         sketchColor = `rgb(${r},${g},${b})`;
     }
+    if(document.getElementById('eraser').checked) {
+        sketchColor = 'white';
+    }
     e.target.style.backgroundColor = sketchColor;
 }
 
