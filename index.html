@@ -11,22 +11,24 @@
     </head>
     <body>
         <div id="main-container">
-            <h1 id="title">Odin Etch-a-Sketch</h1>
-            <button id="clear" onClick="clearGridColor()">Clear</button>
-            <div id="sketch-grid">
+            <div id="sketch-grid"></div>
+            <div id="selection-div">
+                <h1 id="title">Odin Etch-a-Sketch</h1>
+                <div id="color-options">
+                    <p>Color:</p>
+                    <input type="radio" id="grey" name="color-option" value="grey" checked>
+                    <label for="grey">Grey</label>
+                    <input type="radio" id="random" name="color-option" value="random">
+                    <label for="random">Random</label>
+                    <input type="radio" id="eraser" name="color-option" value="eraser">
+                    <label for="random">Eraser</label>
+                </div>
+                <div id="grid-size-div">
+                    <label for="grid-size">Grid size:</label>
+                    <select name="grid-size" id="grid-size" onchange="updateGridSize(this)"></select>
+                </div>
+                <button id="clear" onClick="clearGridColor()">Clear</button>
             </div>
-            <div id="color-options">
-                <p>Color:</p>
-                <input type="radio" id="grey" name="color-option" value="grey" checked>
-                <label for="grey">Grey</label>
-                <input type="radio" id="random" name="color-option" value="random">
-                <label for="random">Random</label>
-                <input type="radio" id="eraser" name="color-option" value="eraser">
-                <label for="random">Eraser</label>
-            </div>
-            <label for="grid-size">Grid size:</label>
-            <select name="grid-size" id="grid-size" onchange="updateGridSize(this)">
-            </select>
         </div>
     </body>
 </html>
