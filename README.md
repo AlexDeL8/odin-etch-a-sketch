@@ -5,7 +5,6 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Screenshots](#screenshots)
 * [Room for Improvement](#room-for-imporovement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contacts)
@@ -15,16 +14,17 @@
 - This is the *Odin Etch-a-Sketch project** to practice what was learned in the **JS Foundations** section of the **Foundations** portion in [The Odin Project](https://www.theodinproject.com/dashboard)
 
 ## Technologies Used
-
+- HTML, CSS, Flexbox, JavaScript
 
 ## Features
-
-
-## Screenshots
-
+- Ability to vary sketch grid size
+- Regular (grey), Random/Rainbow, Eraser options to sketch with
+- Clear grid button
 
 ## Room for Improvement
-
+- Border around the sketch grid to look like a real etch-a-sketch toy
+- Slight fade animation when a cell is "drawn-on"
+- Shake and fade animation when clearing the board
 
 ## Acknowledgements
 - This project was inspired by and based on the courses provided by [The Odin Project](https://www.theodinproject.com/dashboard)
