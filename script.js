@@ -48,24 +48,35 @@ function createSketchGrid(gridSize=16) { //default size 16x16
     }
 }
 
-function fillOnMouseOver(e) {
-    let sketchColor = '';
-    if(document.getElementById('grey').checked) {
-        sketchColor = 'grey';
+let sketchColor = 'grey';
+function sketchOptionSelected(sketchOptionButtonPressed) {
+    let buttons = Array.from(document.getElementsByClassName('sketch-option'));
+    for(let button of buttons) {
+        if(button.getAttribute('id') === sketchOptionButtonPressed.getAttribute('id')) {
+            button.setAttribute('active', '');
+            button.removeAttribute('inactive');
+        } else {
+            button.setAttribute('inactive', '');
+            button.removeAttribute('active')
+        }
     }
-    if(document.getElementById('random').checked) {
+
+    sketchColor = sketchOptionButtonPressed.getAttribute('value')
+    console.log(sketchColor)
+}
+
+function fillOnMouseOver(e) {
+    if(sketchColor === 'random') {
         let min = Math.ceil(0);
         let max = Math.floor(256);
         
         let r = (Math.floor(Math.random() * (max - min) + min));
         let g = (Math.floor(Math.random() * (max - min) + min));
         let b = (Math.floor(Math.random() * (max - min) + min));
-        sketchColor = `rgb(${r},${g},${b})`;
+        e.target.style.backgroundColor = `rgb(${r},${g},${b})`;
+    } else {
+        e.target.style.backgroundColor = sketchColor;
     }
-    if(document.getElementById('eraser').checked) {
-        sketchColor = 'white';
-    }
-    e.target.style.backgroundColor = sketchColor;
 }
 
 function updateGridSize(selectObject) {

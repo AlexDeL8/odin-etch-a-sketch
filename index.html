@@ -14,14 +14,11 @@
             <div id="sketch-grid"></div>
             <div id="selection-div">
                 <h1 id="title">Odin Etch-a-Sketch</h1>
-                <div id="color-options">
-                    <p>Color:</p>
-                    <input type="radio" id="grey" name="color-option" value="grey" checked>
-                    <label for="grey">Grey</label>
-                    <input type="radio" id="random" name="color-option" value="random">
-                    <label for="random">Random</label>
-                    <input type="radio" id="eraser" name="color-option" value="eraser">
-                    <label for="random">Eraser</label>
+                <p>Sketch Option:</p>
+                <div id="sketch-options">
+                    <button class="sketch-option" id="draw" value="grey" onclick="sketchOptionSelected(this)" active=''>✏️</button>
+                    <button class="sketch-option" id="random" value="random" onclick="sketchOptionSelected(this)" inactive>🌈</button>
+                    <button class="sketch-option" id="eraser" value="white" onclick="sketchOptionSelected(this)" inactive>❌</button>
                 </div>
                 <div id="grid-size-div">
                     <label for="grid-size">Grid size:</label>
