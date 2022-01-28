@@ -12,6 +12,7 @@
 
 ## General Information
 - This is the *Odin Etch-a-Sketch project** to practice what was learned in the **JS Foundations** section of the **Foundations** portion in [The Odin Project](https://www.theodinproject.com/dashboard)
+  - The requirements ask for there to be a resizable grid/cells that can be "sketched" with a clear button
 - Visit the project: 🖥️[**Odin Etch-a-Sketch**](https://alexdel8.github.io/odin-etch-a-sketch/)
 
 ## Technologies Used
